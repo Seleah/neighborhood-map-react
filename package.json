@@ -3,21 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "dotenv": "^17.2.3",
     "eslint": "^8.57.1",
     "file-entry-cache": "^11.1.0",
     "flat-cache": "^6.1.18",
     "glob": "^10.4.5",
     "google-map-react": "^1.1.0",
     "google-maps-react": "^2.0.2",
+    "path-browserify": "^1.0.1",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-scripts": "^5.0.1",
-    "rimraf": "^6.1.0"
+    "rimraf": "^6.1.0",
+    "vm-browserify": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -30,6 +33,16 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint-config-react-app": "^7.0.1"
+    "assert": "^2.1.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.1",
+    "eslint-config-react-app": "^7.0.1",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.4"
   }
 }

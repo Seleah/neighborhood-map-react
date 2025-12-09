@@ -3,7 +3,7 @@ import {Map, GoogleApiWrapper} from 'google-maps-react';
 import NoMapAlt from './NoMapAlt';
 // import * as LocationsAPI from '../api/Locations';
 
-const MAP_KEY = "***REDACTED***";
+const MAP_KEY = process.env.REACT_APP_GOOGLE_API_KEY; // ***REMOVED***
 
 class MapDisplay extends React.Component {
   state = {

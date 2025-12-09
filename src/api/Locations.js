@@ -1,8 +1,8 @@
 // import locations from '../data/locations.json';
 
 export const getLocations = (query) => {
-	const CLIENT_ID = "***REMOVED***";
-	const CLIENT_SECRET = "***REMOVED***";
+	const CLIENT_ID = process.env.REACT_APP_FOURSQUARE_CLIENT_ID; // ***REMOVED*** 
+	const CLIENT_SECRET = process.env.REACT_APP_FOURSQUARE_CLIENT_SECRET; // ***REMOVED***
 	const CLIENT_VERSION = "20181112";
 
 	query = query || 'ramen';
